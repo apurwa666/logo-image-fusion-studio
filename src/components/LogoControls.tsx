@@ -4,7 +4,7 @@ import { Slider } from "@/components/ui/slider";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { LogoSettings } from '@/pages/Index';
-import { Settings, Move, Resize, Eye } from "lucide-react";
+import { Settings, Move, Expand, Eye } from "lucide-react";
 
 interface LogoControlsProps {
   logoSettings: LogoSettings;
@@ -48,7 +48,7 @@ export const LogoControls = ({ logoSettings, onSettingsChange }: LogoControlsPro
         {/* Size Control */}
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <Resize className="w-4 h-4 text-blue-600" />
+            <Expand className="w-4 h-4 text-blue-600" />
             <Label className="font-medium">Size: {logoSettings.size}%</Label>
           </div>
           <Slider
